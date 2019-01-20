@@ -16,6 +16,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # My GEMS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'sassc-rails', '>= 2.0.0'
 gem 'jquery-rails'
 gem "font-awesome-rails"
 gem 'bootstrap-sass-extras'

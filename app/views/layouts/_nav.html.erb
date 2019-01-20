@@ -6,13 +6,18 @@
   <div class="navbar-collapse collapse" id="navbarsExample01" style="">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to "Sign Up", new_user_registration_path %>
+        <a class="nav-link" href="#"><%= link_to "Sign Up", new_user_registration_path %><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-       <%= link_to "Sign In", new_user_session_path %>
+        <a class="nav-link" href="#"><%= link_to "Sign In", new_user_session_path %></a>
       </li>
       <li class="nav-item">
-        <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        <a class="nav-link disabled" href="#"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></a>
       </li>
     </ul>
+    <br>
+    <form class="form-inline my-2 my-md-0">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
 </nav>

@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem "font-awesome-rails"
 gem 'bootstrap-sass-extras'
 gem 'devise', '~> 4.5'
+gem 'simple_form', '~> 4.1'
 
 
 

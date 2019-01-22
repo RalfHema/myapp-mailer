@@ -10,17 +10,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body >
-    <div class=”main-container”>
+    <div id="wrap">
       <header>
         <%= render 'layouts/nav'%>
       </header>
-      <section class="container">
+      <section id="main" class="container clear-top">
         <%= bootstrap_flash %>
         <%= yield %>
       </section>
-      <footer>
-        <%= render 'layouts/footer'%>
-      </footer>
     </div>
+    <footer class="footer">
+      <%= render 'layouts/footer'%>
+    </footer>
   </body>
 </html>

@@ -123,8 +123,9 @@
     <div class="card my-4">
       <h5 class="card-header">Recent Articles</h5>
       <div class="card-body">
-        <% @articles.each do |a| %> <br>
-          <strong><%= link_to a.title, a %></strong>
+        <% @article.each do |a| %> <br>
+          <h6>Created by: <i><%= a.user.username %></i></h6>
+          <h3><%= link_to a.title, a %></h3>
           <p><%= truncate(a.body, length: 100, ){ link_to "Continue", a } %></p>
         <% end %>
          
